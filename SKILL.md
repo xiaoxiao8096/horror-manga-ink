@@ -1,62 +1,64 @@
 ---
 name: horror-manga-ink
-description: One-click monochrome psychological-horror manga photo transformation. Use when a user provides an existing photo and wants an original Japanese black-and-white horror-manga atmosphere with bold ink, crosshatching, screentone, and unsettling mood while preserving identity, pose, composition, and scene facts. Use for portraits, groups, landscapes, interiors, streets, and objects; do not use to reproduce a named living artist, copyrighted character, existing comic, or specific panel.
+description: One-click original monochrome psychological-horror manga photo transformation. Use when a user provides an existing photo and wants an unsettling black-ink-on-white-paper treatment that preserves identity, pose, composition, perspective, and ordinary scene facts. Use localized precise pen detail, decisive source-supported black shapes, broad white space, and one existing visual tension cue; do not use to reproduce a named living artist, copyrighted character, existing comic, or specific panel.
 ---
 
 # Monochrome Horror Manga Ink
 
-Transform a supplied photo into an **original** black-and-white psychological-horror manga image. The default is a single medium-intensity result: stark ink contours, crosshatching, screentone, deep shadow masses, paper grain, and quiet unease.
+Transform a supplied photo into an **original** monochrome psychological-horror manga still. The default is one medium-intensity result built from normal reality, black ink, white paper, precise local observation, and one already-present tension cue.
 
-Do not name, imitate, or recreate a living artist's exact style, a copyrighted comic, character, or panel. Translate any such request into general visual traits: black ink, high contrast, dense hatching, halftone texture, uncanny stillness, and psychological tension.
+Do not name, imitate, or recreate a living artist's exact style, a copyrighted comic, character, or panel. Translate such requests into general traits: factual ordinary setting, decisive black ink, broad white space, variable pen line, detailed observation, restrained hatching, and quiet psychological unease.
 
 ## Resources
 
 | Resource | Read when | Purpose |
 |---|---|---|
-| [Visual grammar and safety](references/visual-grammar-and-safety.md) | Before every conversion | Apply generic ink vocabulary, identity preservation, and acceptance checks |
-| [Value map and line grammar v2](references/value-map-and-line-grammar-v2.md) | Before writing the final prompt | Apply four-layer values, local directional hatching, negative space, anti-drift, and close-night-portrait rules |
-| [Prompt templates](templates/prompt-templates.md) | Writing the image-editing instruction | Select the shared preservation block, v2 value-map prompt, intensity, and scene modifier |
+| [Visual grammar and safety](references/visual-grammar-and-safety.md) | Before every conversion | Apply identity preservation and safety boundaries |
+| [Ordinary world and single tension v3](references/ordinary-world-and-single-tension-v3.md) | Before every prompt | Apply normal reality, source-supported black, white space, detail allocation, portrait, and night-selfie rules |
+| [Prompt templates v3](templates/prompt-templates.md) | Writing the image-editing instruction | Select the shared preservation block, v3 base prompt, intensity, and scene modifier |
 
-## One-Click Workflow
+## Required Workflow
 
-1. **Inspect the source.** Identify subject type, source ratio, facial/identity anchors, pose, composition, lighting, major objects, scene structure, and any readable text.
-2. **Lock the source.** Preserve ratio, subject identity, face shape, expression, hairstyle, clothing silhouette, body/hand count, pose, camera angle, perspective, major object placement, and background architecture. Preserve every person and their relationship in a group photo.
-3. **Set intensity.** Use **Medium** by default. Use **Subtle** only if the user asks for a lighter ink conversion. Use **Intense** only if the user requests stronger psychological tension. Intensity controls only line density, black masses, screentone, and abstract ink texture.
-4. **Build one prompt.** Read the v2 value-map reference and prompt templates. Use the four-layer value system, the generic medium base, the relevant scene modifier, and the shared preservation block. Keep the original aspect ratio unless the user explicitly requests a crop.
-5. **Transform once.** Use image editing with the supplied photo as reference. Request an original monochrome ink result; do not generate dialogue, text, a panel border, or extra narrative content.
-6. **Run the lightweight check.** Confirm that the result is monochrome, recognizable, ratio-consistent, and free from unwanted new people, objects, readable text, gore, body distortion, or source-composition drift.
-7. **Deliver one image.** State the selected intensity and the preserved anchors. Do not make extra variants unless requested.
+1. **Inspect the ordinary scene.** Identify subject type, source ratio, facial/identity anchors, pose, camera perspective, normal objects, scene structure, and readable text.
+2. **Select one existing tension cue.** Choose one source fact to observe too closely: a still gaze, glasses reflection, a narrow recess, one lamp, a hand, an empty corridor, a light edge, or another already-present detail. Do not invent an event.
+3. **Lock the source.** Preserve ratio, composition, identity, face shape, expression, hair, clothing, body/hand count, pose, lens perspective, major objects, and background architecture. Preserve every person and relationship in a group.
+4. **Allocate ink deliberately.** Keep broad paper-white fields. Use pure black only for source-supported structural shapes. Create gray only with sparse form-following hatching and small line clusters; do not use full-image screentone, dot overlays, gray wash, or universal scratch texture.
+5. **Build one prompt.** Read the v3 reference and templates. Use the generic base, the relevant scene modifier, and the shared preservation block. Keep the source ratio unless a crop is explicitly requested.
+6. **Transform once.** Use image editing with the supplied photo as reference. Request one original monochrome still; do not create dialogue, captions, a panel border, or extra narrative content.
+7. **Run the lightweight check.** Confirm factual scene clarity, recognizable identity, preserved composition, broad white space, structural black, localized detail, and no unwanted new content.
+8. **Deliver one image.** State the intensity, the tension cue, and preserved anchors. Do not make extra variants unless asked.
 
 ## Intensity Contract
 
 | Level | Visual result | Must not change |
 |---|---|---|
-| Subtle | Fine contours, sparse screentone, moderate shadows, low hatching density | Source identity and composition |
-| Medium (default) | Clear ink contours, dense hatching in shadows, visible halftone, strong black-white hierarchy | Source identity, pose, objects, perspective, and scene facts |
-| Intense | Heavy black masses, elaborate hatching, layered screentone, pronounced abstract ink texture | Identity, anatomy, object shapes, and composition; no gore or new events |
+| Subtle | Mostly ordinary source scene, broad white breathing room, only a few local pen details | Source identity, composition, and scene facts |
+| Medium (default) | Decisive source-supported black shapes, fine selected detail, sparse hatching-gray, one clear tension cue | Source identity, pose, objects, perspective, and scene facts |
+| Intense | Stronger black/white imbalance and tighter detail around the same tension cue; ordinary setting remains legible | Identity, anatomy, object shapes, composition, and story facts; no gore or new event |
 
 ## Preservation Prompt Block
 
 Always include this instruction in the image-editing prompt:
 
 ```text
-Preserve the source photo's recognizable subject identity, facial structure, expression, pose, clothing silhouette, camera angle, perspective, composition, major object placement, and background architecture. Keep all non-target objects and spatial relationships. Do not add people, dialogue, readable text, injuries, gore, body distortion, new narrative events, copyrighted characters, or symbols.
+Preserve the source photo's recognizable subject identity, facial structure, expression, pose, clothing silhouette, camera angle, lens perspective, composition, major object placement, background architecture, and all spatial relationships. Keep the ordinary real-world setting factual and readable. Do not add people, dialogue, readable text, injuries, gore, body distortion, new narrative events, copyrighted characters, or symbols.
 ```
 
-For portraits, protect face shape, eye spacing, expression, hair silhouette, clothing, and pose. For groups, protect every person and their spacing. For landscapes, protect weather, horizon, buildings, and perspective. For collectibles/products, protect silhouette, label, material, and placement.
+For portraits, preserve natural eye scale, eye spacing, gaze, mouth, glasses, hair, and close-camera perspective. For groups, preserve every person and their spacing. For landscapes, preserve weather, horizon, buildings, and perspective. For objects, preserve silhouette, label, material, and placement.
 
 ## Hard Exclusions
 
-Never create direct imitation of a named living creator, an existing comic, a specific panel, or a copyrighted character. Never add gore, injury, extra anatomy, deformity, a new character, speech bubbles, captions, logos, or invented readable text unless separately requested and permitted.
+Never create direct imitation of a named living creator, an existing comic, a specific panel, or a copyrighted character. Never add gore, injury, extra anatomy, deformation, a new character, speech bubbles, captions, logos, or invented readable text.
 
-Do not change the photo's crop, aspect ratio, framing, perspective, pose, identity, object arrangement, or scene structure unless the user explicitly asks. Do not produce a color result.
+Do not change the photo's crop, aspect ratio, framing, perspective, pose, identity, object arrangement, or scene structure unless the user explicitly asks. Do not produce color. Do not create cute/anime, glossy, pastel, beauty-illustration, painterly, neon, or generic filter drift.
 
 ## Quality Gate
 
 | Check | Pass condition |
 |---|---|
-| Monochrome | The result uses black, white, and grayscale ink treatment only |
-| Style | Four-layer values are visible: structural blacks, selective paper-white highlights, grouped halftone midtones, and local form-following hatching. The image avoids cute-anime, pastel, glossy, cel-shaded, painterly, and global-scratch-noise drift |
+| Normal reality | The original setting remains ordinary, factual, and readable |
+| Ink structure | Broad paper-white space, source-supported black shapes, and sparse form-following hatching replace gray wash, dot blankets, and global texture |
+| Tension | One existing source detail carries the unease; no new horror event is added |
 | Fidelity | The primary subject and all protected anchors remain recognizable and composition-consistent |
 | Safety | No direct creator imitation, copyrighted characters, text, gore, or body distortion appears |
 | Scope | Exactly one requested transformation is delivered |
@@ -65,4 +67,4 @@ If a critical check fails, correct only that failure with one focused regenerati
 
 ## Feedback
 
-Interpret feedback as **intensity**, **value map**, or **texture** control: more/less black mass, more/less paper-white breathing room, stronger/weaker hatching, denser/lighter screentone, cleaner/messier linework, stronger/weaker psychological tension, or more/less organic abstract texture. Apply it to the current image only unless the user explicitly names a batch or lasting preference.
+Interpret feedback as scene-structure control: more/less white paper, more/less structural black, more/less local pen detail, simplify a background, focus tension on a different existing cue, make the setting more ordinary, or make the single tension cue stronger. Apply it to the current image only unless the user explicitly names a batch or lasting preference.
