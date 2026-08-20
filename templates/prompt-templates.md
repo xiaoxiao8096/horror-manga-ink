@@ -1,44 +1,44 @@
-# Environment-First Psychological-Horror Ink Prompt Templates v5
+# Identity-Anchor Manga Redraw Prompt Templates v6
 
-Use the source photo as the visual reference. Preserve its original aspect ratio and composition unless the user explicitly asks for a crop. Create an original monochrome psychological-horror still; do not emulate a named living artist, copyrighted character, published panel, or specific comic.
+Use the supplied photo only as a source of identity, composition, and scene anchors. Preserve its original aspect ratio and overall framing unless the user explicitly asks for a crop. Render one original monochrome psychological-horror manga illustration; do not emulate a named living artist, copyrighted character, published page, or specific comic.
 
-## Shared preservation block
-
-```text
-Preserve the source photo's recognizable subject identity, facial structure, expression, pose, clothing silhouette, camera angle, lens perspective, composition, major object placement, background architecture, materials, and all spatial relationships. Keep the ordinary real-world setting factual and readable. Do not add people, dialogue, readable text, injuries, gore, body distortion, new narrative events, copyrighted characters, or symbols.
-```
-
-## Default medium-intensity prompt
+## Shared Anchor Lock
 
 ```text
-Transform the provided photo into an original monochrome psychological-horror ink illustration. Treat the person as part of a normal, factual location, not as a heroic or glamorous portrait. Preserve the unflattering truth of the source camera perspective, face shape, eye scale, expression, glasses, hair, and clothing. Give substantial visual weight to existing environment materials: worn wall or shutter edges, uneven pavement, vehicle panels, tree/fence/cable texture, doorway/recess boundaries, lamp pole, and source-supported shadows.
-
-Use black ink and broad quiet paper-white fields. Make pure black only from actual deep recesses, clothing interiors, selected uneven hair clumps, and genuine cast shadows. Build gray with small irregular source-following line clusters—not smooth wash, dot blankets, long elegant hatching, or decorative texture. Use close local observation at real material transitions: glasses pads and reflection, under-eye shadows, hair roots and flyaways, mouth corners, scuffed pavement seams, interrupted reflections, worn architectural edges, and surface stains only where source evidence supports them. Let the scene feel ordinary first and slightly uncomfortable only because these normal details have been observed too closely.
-
-[Shared preservation block]
-
-Avoid heroic central portrait emphasis, polished anatomy, flattering symmetry, smooth black hair helmet shapes, cinematic rim light, dramatic action shadows, speed-line energy, poster-like contrast, visual coolness, color, halftone blankets, dot overlays, all-over hatching, gray wash, generic grain, decorative splatter, glossy/anime eyes, beauty retouching, cute/chibi styling, painterly rendering, neon lighting, speech bubbles, captions, logos, gore, extra anatomy, facial drift, warped perspective, or source-composition drift.
+Preserve only the photo's hard anchors: recognizable facial proportions, glasses shape, hairstyle silhouette, neutral expression, clothing silhouette, source framing, close-camera lens viewpoint, street direction, building/vehicle/lamp placement, and overall real-world setting. Redraw all photographic surfaces into one consistent black-ink comic world. Do not add people, dialogue, readable text, injuries, gore, body distortion, new events, copyrighted characters, or symbols.
 ```
 
-## Subtle prompt modifier
+## Default Medium Redraw Prompt
 
 ```text
-Keep the person visually modest within the source environment. Preserve more quiet white and pale material fields, use only a few broken observation marks, and let the place stay clearly ordinary at first glance.
+Redraw the provided photo as one original monochrome psychological-horror manga illustration, not as a sketch, trace, filter, or photorealistic ink portrait. Use the source only for hard identity and scene anchors. Rebuild the face, hair, glasses, shirt, road, vehicle, buildings, tree, lamp, pavement, and dark recesses into one coherent graphic system of crisp black contours, deliberate black fill shapes, selected controlled pen texture, and clean paper-white fields.
+
+Keep the person recognizable through face proportions, glasses, hair silhouette, eye spacing, nose/mouth relationship, neutral expression, clothing, and close-camera viewpoint. Simplify facial skin into a few clear drawn planes; remove pores, lens blur, photo noise, tiny reflection fragments, and literal photographic gradient shading. Group hair into drawn black/gray shape clusters rather than preserving individual photographic strands. Redraw the environment as a designed ink setting: preserve only key architecture planes, pavement direction, vehicle silhouette, practical lamp, tree mass, shutter/doorway, and recesses. Remove incidental clutter and make person and environment use the same line weight, black-white grouping, and texture logic.
+
+[Shared Anchor Lock]
+
+Avoid pencil sketch, charcoal sketch, photorealistic ink, pen trace, every-pore detail, photographic skin texture, lens artifacts, crosshatching over every surface, full-image screentone, dot overlay, gray wash, generic grain, glossy/anime eyes, cute styling, polished action-hero anatomy, cinematic poster lighting, color, panel borders, frames, dialogue, captions, logos, gore, extra anatomy, altered identity anchors, or imitation of a specific artist, comic, character, or published page.
 ```
 
-## Intense prompt modifier
+## Subtle Redraw Modifier
 
 ```text
-Increase the density of source-supported material observation only at existing worn, shadowed, damp-looking, or recessed transitions. Make the place feel more patient and uncomfortable, not more dramatic, attractive, supernatural, or action-oriented.
+Keep the illustration spare and graphic: fewer texture fields, simple facial planes, clear object silhouettes, quiet white space, and only selected pen texture. It must still look fully drawn, never like a filtered photo.
 ```
 
-## Scene modifiers
+## Intense Redraw Modifier
+
+```text
+Increase ink-shape contrast and selected material texture, but retain graphic simplification. Make the ordinary scene more visually uncomfortable through deliberate redraw choices; do not reintroduce photographic detail, action-poster drama, or a new event.
+```
+
+## Scene Modifiers
 
 | Scene | Add this modifier |
 |---|---|
-| Portrait | `Keep natural eye scale, source facial asymmetry, glasses pads/rims, hair roots, flyaways, under-eye planes, nose, and mouth corners factual. Use small broken marks at real transitions; do not sculpt a handsome, heroic, smooth, or symmetrical face.` |
-| Close night portrait | `Preserve the source vertical ratio, close-camera awkwardness, face, glasses, hair, dark clothing, street depth, vehicle/buildings, and practical lamp position. Do not make the face a poster focal point. Use the hair, shirt, street recesses, shutter/wall/pavement/vehicle edges, and lamp pole as uneven material anchors. Render the glasses reflection as small and scuffed rather than polished; retain ordinary, unglamorous street depth.` |
-| Group | `Preserve every person, their spacing, gestures, clothing, and relationship cues. Distribute detail across real environment materials rather than beautifying a central individual.` |
-| Landscape | `Preserve horizon, weather, cloud structure, buildings, and perspective. Observe uneven material edges, vegetation, pavement, windows, and weathered surfaces locally; avoid scenic, cinematic, or poster-like contrast.` |
-| Object / collectible | `Preserve silhouette, labels, material, and placement. Observe scuffs, seams, uneven reflection, and source-supported surface transitions; do not reshape, beautify, or add accessories.` |
-| Interior / street | `Preserve perspective, architecture, furniture, signs, and non-target objects. Make normal walls, floor, doorway, lamp, recess, tree, vehicle, or road carry the uneasy detail; do not turn the scene into a clean action backdrop.` |
+| Portrait | `Use face proportions, glasses, hair silhouette, eye spacing, and expression as hard identity anchors. Render the face as a simplified drawn character with a few strong planes and small line accents; do not trace skin pores, lens blur, or every facial shadow.` |
+| Close night portrait | `Keep the vertical framing, close camera viewpoint, same glasses, hair, dark shirt, street direction, lamp placement, vehicle/buildings, and road depth. Redraw the street as coherent ink architecture with a few deliberate planes and silhouettes. Redraw the face and street with one unified graphic language; do not keep photographic night gradients or facial microtexture.` |
+| Group | `Keep each person's identity anchors, clothing, spacing, and relation. Redraw all people and the environment in one consistent graphic system; do not preserve photo surfaces or merge identities.` |
+| Landscape | `Keep horizon, weather, buildings, road, and perspective anchors. Redraw the location through designed black/white shapes and selected ink texture; do not trace every photographic branch, cloud, or surface.` |
+| Object / collectible | `Keep silhouette, labels, material identity, and placement. Redraw the object as a coherent ink object using decisive shape groups; do not trace reflections, noise, or every surface imperfection.` |
+| Interior / street | `Keep real architecture, furniture/vehicles, room or street direction, and main lights. Rebuild the scene using selected planes, silhouettes, and controlled ink texture; omit incidental photo clutter and avoid a simple line-filter result.` |
